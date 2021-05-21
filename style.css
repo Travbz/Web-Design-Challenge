@@ -6,8 +6,8 @@ html, body {
 
   
   body {
-      text-align:top;
-      background: linear-gradient(-45deg, #f1edec, #7e7b7c, #2b2c2c, #0f0f0f);
+      text-align:center;
+      background: linear-gradient(-45deg, #f1edec, #7e7b7c, #acadad, #838181);
       background-size: 400% 400%;
       animation: gradient 15s ease infinite;
   }
@@ -33,6 +33,11 @@ html, body {
 @font-face {
     font-family: myFont;
     src: url(PS2P.ttf);
+}
+
+@font-face {
+    font-family: digital;
+    src: url(d7.ttf);
 }
 
  h1 {
@@ -74,18 +79,38 @@ h1:nth-child(3) {
 
 /* Change background on mouse-over */
 .navbar a:hover {
+    cursor:crosshair;
     background: #ddd;
     color: black;
   }
 
 div.collapse.navbar-collapse, ul navbar.nav li.nav-item a.nav-link{
-    
-      color: #E69D32;
+
+     
+      color: rgb(253, 253, 253): ;
       font-family: "myFont", Times, serif;
       font-size: 20px;
     
 }
+
+
+p {
+    font-family:digital;
+    font-size: 20;
+    font-weight: strong;
+    
+}
   
+h2 {
+    font-family: myFont;
+    padding-top: 15px;
+    padding-bottom: 0;
+    max-height: 25 px;
+    color:rgb(240, 240, 248);
+    font-weight: bold;
+}
+
+
 
 
 /*Keyframes*/
