@@ -26,7 +26,7 @@ html, body {
 
   #container {
     width: 70vw;
-    margin: 30vw auto;
+    margin: 10vw auto;
     margin-top: 60px;
   }
 
@@ -38,6 +38,11 @@ html, body {
 @font-face {
     font-family: digital;
     src: url(d7.ttf);
+}
+
+@font-face {
+    font-family: contra;
+    src: url(contra.ttf);
 }
 
  h1 {
@@ -67,50 +72,6 @@ h1:nth-child(3) {
   color: rgb(173, 171, 171);
   animation: glitch3 2.5s infinite;
 }
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 100px; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-  }
-
-
-
-/* Change background on mouse-over */
-.navbar a:hover {
-    cursor:crosshair;
-    background: #ddd;
-    color: black;
-  }
-
-div.collapse.navbar-collapse, ul navbar.nav li.nav-item a.nav-link{
-
-     
-      color: rgb(253, 253, 253): ;
-      font-family: "myFont", Times, serif;
-      font-size: 20px;
-    
-}
-
-
-p {
-    font-family:digital;
-    font-size: 20;
-    font-weight: strong;
-    
-}
-  
-h2 {
-    font-family: myFont;
-    padding-top: 15px;
-    padding-bottom: 0;
-    max-height: 25 px;
-    color:rgb(240, 240, 248);
-    font-weight: bold;
-}
-
-
 
 
 /*Keyframes*/
@@ -280,9 +241,128 @@ h2 {
   }
 }
 
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 100px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
 
 
 
+/* Change background on mouse-over */
+.navbar a:hover {
+    cursor:crosshair;
+    background: #ddd;
+    color: black;
+  }
+
+div.collapse.navbar-collapse, ul navbar.nav li.nav-item a.nav-link{
+
+     
+      color: rgb(253, 253, 253): ;
+      font-family: "myFont", Times, serif;
+      font-size: 20px;
+    
+}
+
+
+
+p {
+    font-size: 20px;
+    padding: 20px;    
+}
+  
+h2 {
+    
+    font-family: myFont;
+    padding-top: -50px;
+    padding-bottom: 0;
+    max-height: 25 px;
+    color:rgb(240, 240, 248);
+    font-weight: bold;
+}
+
+h6{
+font-family: contra;
+font-size: 18px;
+}
+.visual {
+  font-display: center;
+}
+
+.visualizations{
+  padding-left: 75px;
+}
+
+.summary {
+  font-display: center;
+}
+
+.visualizations img {
+  height: 100px;
+  width: 150px;
+  background-color: rgba(255,255,225,.5);
+  border-radius: 100%;
+}
+
+.left {
+    float: left;
+    padding: 0 10px 0 0;
+    background-color: rgba(100,100,100,.5);
+    border-radius: 5px;
+    margin: 25px 15px 0 25px;
+    width: 40%
+}
+
+.first {
+  font-family: contra;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.second {
+  font-family: contra;
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.right {
+  float: right;
+  padding: 0 10px 0 0;
+  background-color: rgba(100,100,100,.5);
+  border-radius: 10px;
+  margin: 25px 15px 0 25px;
+  width: 30%
+}
+
+.together img {
+  background-color: rgba(255,255,225,.5);
+  border-radius: 25%;
+  width: 115%
+}
+
+.together {
+  margin-right: 25px;
+}
+
+@media (max-width: 600px) {
+  .left {
+      float: none;
+  }
+
+  .right {
+      float: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .tabletable {
+      width: 500px;
+  }
+}
 
 
 
