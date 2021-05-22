@@ -63,15 +63,6 @@ html, body {
   animation: glitch1 2.5s infinite;
 }
 
-h1:nth-child(2) {
-  color:white;
-  animation: glitch2 2.5s infinite;
-}
-
-h1:nth-child(3) {
-  color: rgb(173, 171, 171);
-  animation: glitch3 2.5s infinite;
-}
 
 
 /*Keyframes*/
@@ -131,121 +122,12 @@ h1:nth-child(3) {
   }
 }
 
-@keyframes glitch2 {
-  0% {
-    transform: none;
-    opacity: 0.25;
-  }
-  7% {
-    transform: translate(-2px, -3px);
-    opacity: 0.5;
-  }
-  10% {
-    transform: none;
-    opacity: 0.25;
-  }
-  27% {
-    transform: none;
-    opacity: 0.25;
-  }
-  30% {
-    transform: translate(-5px, -2px);
-    opacity: 0.5;
-  }
-  35% {
-    transform: none;
-    opacity: 0.25;
-  }
-  52% {
-    transform: none;
-    opacity: 0.25;
-  }
-  55% {
-    transform: translate(-5px, -1px);
-    opacity: 0.5;
-  }
-  50% {
-    transform: none;
-    opacity: 0.25;
-  }
-  72% {
-    transform: none;
-    opacity: 0.25;
-  }
-  75% {
-    transform: translate(-2px, -6px);
-    opacity: 0.5;
-  }
-  80% {
-    transform: none;
-    opacity: 0.25;
-  }
-  100% {
-    transform: none;
-    opacity: 0.25;
-  }
-}
-
-@keyframes glitch3 {
-  0% {
-    transform: none;
-    opacity: 0.25;
-  }
-  7% {
-    transform: translate(2px, 3px);
-    opacity: 0.5;
-  }
-  10% {
-    transform: none;
-    opacity: 0.25;
-  }
-  27% {
-    transform: none;
-    opacity: 0.25;
-  }
-  30% {
-    transform: translate(5px, 2px);
-    opacity: 0.5;
-  }
-  35% {
-    transform: none;
-    opacity: 0.25;
-  }
-  52% {
-    transform: none;
-    opacity: 0.25;
-  }
-  55% {
-    transform: translate(5px, 1px);
-    opacity: 0.5;
-  }
-  50% {
-    transform: none;
-    opacity: 0.25;
-  }
-  72% {
-    transform: none;
-    opacity: 0.25;
-  }
-  75% {
-    transform: translate(2px, 6px);
-    opacity: 0.5;
-  }
-  80% {
-    transform: none;
-    opacity: 0.25;
-  }
-  100% {
-    transform: none;
-    opacity: 0.25;
-  }
-}
 
 .navbar {
-    overflow: hidden;
+    overflow: visible;
     background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 100px; /* Position the navbar at the top of the page */
+    position: static; /* Set the navbar to fixed position */
+    top: -80px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
   }
 
@@ -271,13 +153,13 @@ div.collapse.navbar-collapse, ul navbar.nav li.nav-item a.nav-link{
 
 p {
     font-size: 20px;
-    padding: 20px;    
+    padding: 10px;    
 }
   
 h2 {
     
     font-family: myFont;
-    padding-top: -50px;
+    padding-top: 20px;
     padding-bottom: 0;
     max-height: 25 px;
     color:rgb(240, 240, 248);
@@ -324,6 +206,7 @@ font-size: 18px;
 }
 
 .second {
+  margin-left: 10;
   font-family: contra;
   margin-top: 0;
   font-size: 15px;
@@ -360,12 +243,15 @@ font-size: 18px;
 
 @media (max-width: 1500px) {
   .tabletable {
-      width: 500px;
+      width: 1000px;
   }
 }
 
-
-
+@media (max-height:1500px){
+  .tabletable {
+    height: 1000px;
+  }
+}
 
 
 
